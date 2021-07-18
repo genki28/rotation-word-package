@@ -1,0 +1,1 @@
+export { default as RotationWord } from "./components/WordCircleComponent.vue"

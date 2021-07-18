@@ -1,14 +1,30 @@
 {
-  "name": "circle-word-package",
-  "version": "0.1.0",
-  "private": true,
+  "name": "rotation-word-package",
+  "version": "1.0.0",
+  "author": "DaigorouGenki",
+  "license": "MIT",
+
+  "main": "dist/rotation-word.common.js",
+  "unpkg": "dist/rotation-word.umd.min.js",
+  "jsdelivr": "dist/rotation-word.umd.min.js",
+  "types": "./rotation-word.d.ts",
+
+  "files": [
+    "dist/*",
+    "rotation-word.d.ts",
+    "src/lib/@types/componentPropTypes.d.ts"
+  ],
+
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name rotation-word ./src/entry.ts",
+    "prepublish": "yarn build-bundle"
   },
+
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0"
@@ -30,7 +46,10 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.0.0",
+    "node-sass": "^6.0.1",
     "prettier": "^2.2.1",
+    "sass": "^1.35.2",
+    "sass-loader": "10.1.1",
     "typescript": "~4.1.5",
     "vue-jest": "^5.0.0-0"
   },
