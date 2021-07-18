@@ -1,6 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <RotationWord />
+  <RotationWord 
+    word="word"
+  />
 </template>
 
 <script lang="ts">

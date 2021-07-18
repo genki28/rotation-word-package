@@ -28,7 +28,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .rotation {
-  display: inline;
+  display: inline-block;
   animation: rotation 3s linear infinite;
 }
 @keyframes rotation {
