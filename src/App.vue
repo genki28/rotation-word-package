@@ -1,16 +1,16 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <WordCircleComponent />
+  <RotationWord />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import WordCircleComponent from "./lib/components/WordCircleComponent.vue";
+import RotationWord from "./lib/components/WordCircleComponent.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    WordCircleComponent,
+    RotationWord,
   },
 });
 </script>
