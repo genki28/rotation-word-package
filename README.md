@@ -26,7 +26,7 @@ createApp(App)
 App.vue
 ```
 <template>
-  <RotationWord 
+  <RotationWord
     word="hogehoge"
   />
 </template>
